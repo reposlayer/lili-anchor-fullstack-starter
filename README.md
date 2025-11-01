@@ -1,5 +1,10 @@
 # Lili Anchor Fullstack Starter
-
+    ██╗     ██╗██╗     ██╗     ██████╗██╗     ██╗
+    ██║     ██║██║     ██║    ██╔════╝██║     ██║
+    ██║     ██║██║     ██║    ██║     ██║     ██║
+    ██║     ██║██║     ██║    ██║     ██║     ██║
+    ███████╗██║███████╗██║    ╚██████╗███████╗██║
+    ╚══════╝╚═╝╚══════╝╚═╝     ╚═════╝╚══════╝╚═╝
 Monorepo that pairs an Anchor 0.29 program with a Next.js 14 dApp. Ship a full Solana feature in one repo using pnpm workspaces, generated SDK bindings, and a turnkey dev environment.
 
 ## Features
