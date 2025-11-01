@@ -1,0 +1,8 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist/anchor",
+    "types": ["mocha", "node"]
+  },
+  "include": ["scripts/**/*.ts", "tests/**/*.ts", "target/types/**/*.ts"]
+}

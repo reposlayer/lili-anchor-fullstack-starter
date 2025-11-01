@@ -1,0 +1,14 @@
+[package]
+name = "lili_anchor_program"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "lili_anchor_program"
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+anchor-lang = "0.29.0"

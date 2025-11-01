@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.10.0
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build Anchor program
+        run: pnpm --filter anchor run build
+      - name: Generate SDK
+        run: pnpm --filter @lili/sdk run build
+      - name: Lint
+        run: pnpm run lint
+      - name: Test Anchor workspace
+        run: pnpm --filter anchor run test
+      - name: Build Next.js app
+        run: pnpm --filter web run build

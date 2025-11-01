@@ -1,0 +1,18 @@
+{
+  "name": "lili-anchor-fullstack",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@8.10.0",
+  "scripts": {
+    "dev": "ts-node scripts/dev.ts",
+    "lint": "pnpm run -r lint",
+    "build": "pnpm run -r build",
+    "build:program": "pnpm --filter anchor run build",
+    "deploy:devnet": "pnpm --filter anchor run deploy:devnet",
+    "test": "pnpm run -r test"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}

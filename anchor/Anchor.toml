@@ -1,0 +1,9 @@
+[programs.devnet]
+lili_anchor_program = "Lili111111111111111111111111111111111111111"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+deploy = "pnpm run deploy:devnet"
